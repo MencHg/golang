@@ -26,4 +26,17 @@ func main(){
 	for key,value := range maple_{
 		fmt.Println(key,value)
 	}
+	mapIskey(maple_,2)
+	fmt.Println(maple_)
+}
+func mapIskey(data map[int]string,index int){
+	value,iskey := data[index]
+	//map的删除操作 delete(目标map对象,需要删除操作的key)
+	delete(data,0)
+	//判断目标中是否存在该key
+	if iskey{
+		fmt.Println("data:",value)
+	}else {
+		fmt.Println("访问的目标中不存在该key")
+	}
 }
