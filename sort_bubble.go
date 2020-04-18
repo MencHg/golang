@@ -12,7 +12,7 @@ func main(){
 	BubbleSort(slice_)
 	fmt.Println("slice_ensort:",slice_)
 }
-func BubbleSort(value []int){
+func BubbleSort(value []int){  //冒泡排序函数
 	valueLength := len(value)
 	for i:=0;i<valueLength-1;i++{
 		for j:=0;j<valueLength-1-i;j++{
