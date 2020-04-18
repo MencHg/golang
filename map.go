@@ -22,4 +22,8 @@ func main(){
 	maple_[4] = "js"
 	map_["xiaoming"] = "v_2.23"
 	fmt.Println(map_,"\n",maple_)
+	//map的遍历
+	for key,value := range maple_{
+		fmt.Println(key,value)
+	}
 }
